@@ -12,18 +12,45 @@ export default function InputFormCard() {
       <div className="card-body">
         <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text">What is your name?</span>
-            <span className="label-text-alt">Top Right label</span>
+            <span className="label-text">name</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
           />
+        </div>
+        <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text-alt">Bottom Left label</span>
-            <span className="label-text-alt">Bottom Right label</span>
+            <span className="label-text">email</span>
           </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div class="flex gap-2">
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">type of clothing</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">crisis area</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
         </div>
       </div>
     </div>
