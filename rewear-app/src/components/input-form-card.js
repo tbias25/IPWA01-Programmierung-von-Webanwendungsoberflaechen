@@ -4,6 +4,9 @@
 
     https://daisyui.com/components/input/
     with form-control and labels
+
+    https://daisyui.com/components/toggle/
+    with label and form-control
 */
 
 export default function InputFormCard() {
@@ -31,26 +34,32 @@ export default function InputFormCard() {
           />
         </div>
         <div class="flex gap-2">
-        <div className="form-control w-full max-w-xs">
-          <label className="label">
-            <span className="label-text">type of clothing</span>
-          </label>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
-          />
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">type of clothing</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs"
+            />
+          </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">crisis area</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs"
+            />
+          </div>
         </div>
-        <div className="form-control w-full max-w-xs">
-          <label className="label">
-            <span className="label-text">crisis area</span>
+        <div className="form-control">
+          <label className="label cursor-pointer">
+            <span className="label-text">Remember me</span>
+            <input type="checkbox" className="toggle" checked />
           </label>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
-          />
-        </div>
         </div>
       </div>
     </div>
