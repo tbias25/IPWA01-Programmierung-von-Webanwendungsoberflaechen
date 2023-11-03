@@ -33,7 +33,7 @@ export default function InputFormCard() {
             className="input input-bordered w-full max-w-xs"
           />
         </div>
-        <div class="flex gap-2">
+        <div className="flex gap-2">
           <div className="form-control w-full max-w-xs">
             <label className="label">
               <span className="label-text">type of clothing</span>
@@ -57,9 +57,41 @@ export default function InputFormCard() {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <span className="label-text">Remember me</span>
-            <input type="checkbox" className="toggle" checked />
+            <span className="label-text">would you like to have the donation picked up?</span>
+            <input type="checkbox" className="toggle"/>
           </label>
+        </div>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">street, number</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div className="flex gap-2">
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">postal code</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs"
+            />
+          </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">city</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs"
+            />
+          </div>
         </div>
       </div>
     </div>
