@@ -6,7 +6,7 @@
 export default function Navbar() {
   return (
     /* with the fixed attribute the navbar will always remain at the top even when scrolling down */
-    <div className="navbar fixed bg-base-100">
+    <div className="navbar fixed bg-base-200">
         {/* with the navbar-start attribute the brand name is on the left side of the navbar */}
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">rewear.</a>

@@ -14,26 +14,27 @@
 
 export default function InputFormCard() {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    /* modified flex-shrink-0 w-full max-w-md shadow-2xl bg-white */
+    <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-white">
       <div className="card-body">
-        <div className="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-md">
           <label className="label">
             <span className="label-text">name</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-md"
           />
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-md">
           <label className="label">
             <span className="label-text">email</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-md"
           />
         </div>
         <div className="flex gap-2">
@@ -64,35 +65,35 @@ export default function InputFormCard() {
             <input type="checkbox" className="toggle"/>
           </label>
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-md">
           <label className="label">
             <span className="label-text">street, number</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-md"
           />
         </div>
         <div className="flex gap-2">
-          <div className="form-control w-full max-w-xs">
+          <div className="form-control w-full max-w-md">
             <label className="label">
               <span className="label-text">postal code</span>
             </label>
             <input
               type="text"
               placeholder="Type here"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-md"
             />
           </div>
-          <div className="form-control w-full max-w-xs">
+          <div className="form-control w-full max-w-md">
             <label className="label">
               <span className="label-text">city</span>
             </label>
             <input
               type="text"
               placeholder="Type here"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-md"
             />
           </div>
         </div>

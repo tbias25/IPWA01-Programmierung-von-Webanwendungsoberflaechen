@@ -8,7 +8,7 @@ import InputFormCard from "@/components/input-form-card";
 export default function Home() {
   return (
     <>
-    {/* 
+      {/* 
       the <section> tag is used to define an area within the page.
       https://www.w3schools.com/tags/tag_section.asp 
     */}
@@ -25,16 +25,49 @@ export default function Home() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">rewear.</h1>
             <p className="mb-5 font-bold">
-            join us in providing clothing donations to crisis-stricken regions,
-            offering warmth, dignity, and hope to those facing adversity
+              join us in providing clothing donations to crisis-stricken
+              regions, offering warmth, dignity, and hope to those facing
+              adversity
             </p>
           </div>
         </div>
       </section>
       <section
         id="contribute-section"
-        className="hero min-h-screen bg-base-200">
+        className="hero min-h-screen bg-base-200"
+      >
         <InputFormCard />
+      </section>
+      <section
+        id="how-does-it-work-section"
+        className="hero min-h-screen bg-base-200"
+      >
+        <div className="text-left text-gray-600">
+          <h1 className="text-5xl font-bold">how does it work</h1>
+          <p className="py-3 max-w-md">
+            whether you prefer the convenience of dropping off your clothing
+            donations at our office or having them picked up from your doorstep,
+            we've got you covered. Once received, each item is carefully
+            inspected before being sent to the designated crisis region,
+            ensuring your contribution reaches those in need with utmost
+            efficiency and care
+          </p>
+        </div>
+      </section>
+      <section
+        id="who-we-are-section"
+        className="hero min-h-screen bg-base-200"
+      >
+        <div className="text-left text-gray-600">
+          <h1 className="text-5xl font-bold">who we are</h1>
+          <p className="py-3 max-w-md">
+            we are dedicated volunteers at a local nonprofit organization
+            committed to streamlining the logistics and organization of clothing
+            donations. Our innovative concept empowers donors to choose the
+            specific crisis-stricken region where their clothing contribution
+            will make a meaningful impact
+          </p>
+        </div>
       </section>
     </>
   );
