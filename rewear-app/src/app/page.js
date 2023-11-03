@@ -6,26 +6,29 @@
 export default function Home() {
   return (
     <>
-      <div
-        className="hero min-h-screen"
+    {/* 
+      the <section> tag is used to define an area within the page.
+      https://www.w3schools.com/tags/tag_section.asp 
+    */}
+      <section
+        id="hero-section"
+        className="hero min-h-screen bg-fixed"
         style={{
           backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+            "url(https://e2f8q5b9.rocketcdn.me/wp-content/uploads/2022/04/box-of-clothing-donations.jpg.webp)",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
+        <div className="hero-content text-center text-base-200">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <h1 className="mb-5 text-5xl font-bold">rewear.</h1>
+            <p className="mb-5 font-bold">
+            join us in providing clothing donations to crisis-stricken regions,
+            offering warmth, dignity, and hope to those facing adversity
             </p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
