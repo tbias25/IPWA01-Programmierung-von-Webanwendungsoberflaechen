@@ -96,7 +96,9 @@ export default function InputFormCard() {
             />
           </div>
         </div>
-        <button className="btn btn-block">block</button>
+        <div class="form-control mt-3">
+        <button className="btn btn-block lowercase">contribute</button>
+        </div>
       </div>
     </div>
   );
