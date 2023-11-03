@@ -3,6 +3,8 @@
   hero with overlay image 
 */
 
+import InputFormCard from "@/components/input-form-card";
+
 export default function Home() {
   return (
     <>
@@ -28,6 +30,11 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section
+        id="contribute-section"
+        className="hero min-h-screen bg-base-200">
+        <InputFormCard />
       </section>
     </>
   );
