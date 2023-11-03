@@ -5,9 +5,18 @@ responsive (dropdown menu on small screen, center menu on large screen)
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    /* with the fixed attribute the navbar will always remain at the top even when scrolling down */
+    <div className="navbar fixed bg-base-100">
+        {/* with the navbar-start attribute the brand name is on the left side of the navbar */}
       <div className="navbar-start">
-        <div className="dropdown">
+        <a className="btn btn-ghost normal-case text-xl">rewear.</a>
+      </div>
+      {/* 
+        with the navbar-end attribute, the dropdown menu is on the right side of the navbar
+        with the lg:hidden attribute the dropdown menu is not displayed from  minimum breakpoints of 1024px
+      */} 
+      <div className="navbar-end lg:hidden">
+        <div className="dropdown dropdown-bottom dropdown-end">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,54 +35,36 @@ export default function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold"
           >
             <li>
-              <a>Item 1</a>
+              <a>contribute</a>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>how does it work</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>who we are</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      {/* 
+        with the navbar-end attribute, the nav links are on the right side of the navbar
+        with the hidden and lg:flex attributes, the nav links are not displayed if the breakpoints are less than 1024px and if this is not the case, the nav links are displayed and flexibly adjusted at the breakpoints
+      */}
+      <div className="navbar-end hidden lg:flex">
+        <ul className="menu menu-horizontal px-1 font-bold">
           <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <a>contribute</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>how does it work</a>
+          </li>
+          <li>
+            <a>who we are</a>
           </li>
         </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
       </div>
     </div>
   );
