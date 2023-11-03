@@ -1,6 +1,6 @@
 /*
-https://daisyui.com/components/navbar/
-responsive (dropdown menu on small screen, center menu on large screen)
+  https://daisyui.com/components/navbar/
+  responsive (dropdown menu on small screen, center menu on large screen)
 */
 
 export default function Navbar() {
