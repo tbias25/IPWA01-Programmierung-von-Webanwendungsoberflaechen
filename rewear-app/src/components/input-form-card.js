@@ -7,6 +7,9 @@
 
     https://daisyui.com/components/toggle/
     with label and form-control
+
+    https://daisyui.com/components/button/
+    button block
 */
 
 export default function InputFormCard() {
@@ -93,6 +96,7 @@ export default function InputFormCard() {
             />
           </div>
         </div>
+        <button className="btn btn-block">block</button>
       </div>
     </div>
   );
