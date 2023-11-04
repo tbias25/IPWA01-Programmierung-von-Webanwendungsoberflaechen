@@ -72,7 +72,7 @@ export default function Home() {
         id="who-we-are-section"
         className="hero min-h-screen bg-base-200"
       >
-        <div className="text-left text-gray-600 max-w-md sm:max-w-sm">
+        <div className="text-left sm:text-center text-gray-600 max-w-md sm:max-w-sm">
           <h1 className="text-5xl font-bold">who we are</h1>
           <p className="py-3">
             we are dedicated volunteers at a local nonprofit organization
