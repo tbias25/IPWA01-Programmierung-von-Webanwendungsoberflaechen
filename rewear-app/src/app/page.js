@@ -20,8 +20,8 @@ export default function Home() {
             "url(https://e2f8q5b9.rocketcdn.me/wp-content/uploads/2022/04/box-of-clothing-donations.jpg.webp)",
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-base-200">
+        <div className="hero-overlay bg-opacity-80"></div>
+        <div className="hero-content text-center text-base-300">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">rewear.</h1>
             <p className="mb-5 font-bold">
@@ -29,6 +29,7 @@ export default function Home() {
               regions, offering warmth, dignity, and hope to those facing
               adversity
             </p>
+            <a href="#contribute-section" className="btn lowercase">contribute</a>
           </div>
         </div>
       </section>
@@ -36,7 +37,20 @@ export default function Home() {
         id="contribute-section"
         className="hero min-h-screen bg-base-200"
       >
-        <InputFormCard />
+        {/*
+          flex-col on sm md and flex-row on lg
+         */}
+        <div className="hero-content flex-col lg:flex-row">
+          <div className="text-center max-w-md text-gray-600 lg:text-left">
+            <h1 className="text-5xl font-bold">contribute</h1>
+            <p className="py-6">
+              we offer the convenience of home pickup for your clothing
+              donations or you can drop off your clothing donations at our
+              office for added convenience.
+            </p>
+          </div>
+          <InputFormCard />
+        </div>
       </section>
       <section
         id="how-does-it-work-section"

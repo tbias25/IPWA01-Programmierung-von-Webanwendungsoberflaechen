@@ -5,11 +5,14 @@
 
 export default function Navbar() {
   return (
-    /* with the fixed attribute the navbar will always remain at the top even when scrolling down */
-    <div className="navbar fixed bg-base-200">
+    /* 
+      with the fixed attribute the navbar will always remain at the top even when scrolling down
+      with the z-10 attribute the navbar is always in the foreground 
+    */
+    <div className="navbar z-10 fixed bg-base-200">
         {/* with the navbar-start attribute the brand name is on the left side of the navbar */}
       <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl">rewear.</a>
+        <a href="/" className="btn btn-ghost normal-case text-xl">rewear.</a>
       </div>
       {/* 
         with the navbar-end attribute, the dropdown menu is on the right side of the navbar
@@ -56,13 +59,13 @@ export default function Navbar() {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold">
           <li>
-            <a>contribute</a>
+            <a href="#contribute-section">contribute</a>
           </li>
           <li>
-            <a>how does it work</a>
+            <a href="#how-does-it-work-section">how does it work</a>
           </li>
           <li>
-            <a>who we are</a>
+            <a href="#who-we-are-section">who we are</a>
           </li>
         </ul>
       </div>
