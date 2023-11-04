@@ -41,13 +41,13 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold"
           >
             <li>
-              <a>contribute</a>
+              <a href="#contribute-section">contribute</a>
             </li>
             <li>
-              <a>how does it work</a>
+              <a href="#how-does-it-work-section">how does it work</a>
             </li>
             <li>
-              <a>who we are</a>
+              <a href="#who-we-are-section">who we are</a>
             </li>
           </ul>
         </div>

@@ -72,9 +72,9 @@ export default function Home() {
         id="who-we-are-section"
         className="hero min-h-screen bg-base-200"
       >
-        <div className="text-left text-gray-600">
+        <div className="text-left text-gray-600 max-w-md sm:max-w-sm">
           <h1 className="text-5xl font-bold">who we are</h1>
-          <p className="py-3 max-w-md">
+          <p className="py-3">
             we are dedicated volunteers at a local nonprofit organization
             committed to streamlining the logistics and organization of clothing
             donations. Our innovative concept empowers donors to choose the
