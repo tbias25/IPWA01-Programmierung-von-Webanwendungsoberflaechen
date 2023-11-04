@@ -40,47 +40,31 @@ export default function InputFormCard() {
         <div className="flex gap-2">
           <div className="form-control w-full max-w-xs">
             <label className="label">
-              <span className="label-text">
-                Pick the best fantasy franchise
-              </span>
-              <span className="label-text-alt">Alt label</span>
+              <span className="label-text">clothing type</span>
             </label>
             <select className="select select-bordered">
               <option disabled selected>
-                Pick one
+                clothing type
               </option>
-              <option>Star Wars</option>
-              <option>Harry Potter</option>
-              <option>Lord of the Rings</option>
-              <option>Planet of the Apes</option>
-              <option>Star Trek</option>
+              <option>hat</option>
+              <option>jacket</option>
+              <option>pullover</option>
+              <option>trousers</option>
+              <option>schoe</option>
             </select>
-            <label className="label">
-              <span className="label-text-alt">Alt label</span>
-              <span className="label-text-alt">Alt label</span>
-            </label>
           </div>
           <div className="form-control w-full max-w-xs">
             <label className="label">
-              <span className="label-text">
-                Pick the best fantasy franchise
-              </span>
-              <span className="label-text-alt">Alt label</span>
+              <span className="label-text">crisis are</span>
             </label>
             <select className="select select-bordered">
               <option disabled selected>
-                Pick one
+                crisis area
               </option>
-              <option>Star Wars</option>
-              <option>Harry Potter</option>
-              <option>Lord of the Rings</option>
-              <option>Planet of the Apes</option>
-              <option>Star Trek</option>
+              <option>ukraine</option>
+              <option>iraq</option>
+              <option>syria</option>
             </select>
-            <label className="label">
-              <span className="label-text-alt">Alt label</span>
-              <span className="label-text-alt">Alt label</span>
-            </label>
           </div>
         </div>
         <div className="form-control">
